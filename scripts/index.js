@@ -51,24 +51,24 @@ generateTextButton.addEventListener('click', () => {
     click()
 })
 
-// text copy
+// text copym (not wokring yet)
 
-const copy = document.querySelector('.copy')
+// const copy = document.querySelector('.copy')
 
-function myFunction() {
-// Get the text field
+// function myFunction() {
+// // Get the text field
 
-// Select the text field
+// // Select the text field
 
-textBox.setSelectionRange(0, 99999); // For mobile devices
+// textBox.setSelectionRange(0, 99999); // For mobile devices
 
-    // Copy the text inside the text field
-navigator.clipboard.writeText(textBox.innerHTML);
+//     // Copy the text inside the text field
+// navigator.clipboard.writeText(textBox.innerHTML);
 
-// Alert the copied text
-alert("Copied the text: " + textBox.innerHTML);
-}
+// // Alert the copied text
+// alert("Copied the text: " + textBox.innerHTML);
+// }
 
-copy.addEventListener('click', () => {
-    myFunction()
-})
+// copy.addEventListener('click', () => {
+//     myFunction()
+// })
