@@ -7,12 +7,12 @@
     "because you are",
     "i'm you",
     "or are you",
-    "THe one who left it all behind!",
+    "The one who left it all behind!",
     "And his overwhelming intensity!!",
     "because",
     "with this treasure i summon",
     "?",
-    "thi finger simply answered",
+    "the finger simply answered",
     "nah i'd win",
     "nah i'd lose"
 ]

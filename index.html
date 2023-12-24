@@ -3,9 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lobotomy Kaisen</title>
+    <title>LobOtomy Kaisen</title>
+    <script
+      src="https://kit.fontawesome.com/2d3e948390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
+    <header>
+      <h1>Lobotomy Kaisen</h1>
+      <h5>Text Generator</h5>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="main-container">
+          <button class="generate-text">Generate Text</button>
+          <div class="loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="text-space">
+            <p class="Lobotomy-text"></p>
+            <p class="copy">Click to Copy</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="scripts/data.js" type="module"></script>
     <script type="module" src="scripts/index.js"></script>
   </body>

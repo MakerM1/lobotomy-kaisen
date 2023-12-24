@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(40, 40, 40);
+    font-family: Arial, Helvetica, sans-serif;
+
+    header {
+        text-align: center;
+        padding: 10px;
+        font-family: 'jujutsuKaisenFont', sans-serif;
+        margin-bottom: 80px;
+
+        h1 {
+            color: #ffd3b9;
+            font-weight: 600;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        h5 {
+            color: #ffd3b9;
+            font-size: 20px;
+        }
+    }
+
+    .main-section {
+        padding: 10px;
+
+        .main-container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            button {
+                margin-bottom: 50px;
+                background-color: #1f232f;
+                color: white;
+                border: 2px solid transparent;
+                padding: 20px 30px;
+                font-weight: 600;
+                border-radius: 50px;
+                transition: all 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #564a94;
+                    border: 2px solid white;
+                }
+
+                &:active {
+                    background-color: #564a949c;
+                    border: 2px solid rgba(255, 255, 255, 0.622);
+                }
+            }
+
+            .text-space {
+                max-width: 1000px;
+                width: 100%;
+                visibility: hidden;
+                border: 2px solid white;
+                padding: 20px;
+                text-align: center;
+                color: white;
+                border-radius: 50px;
+                background-color: #251d4f;
+
+                transform: scale(0);
+
+                .Lobotomy-text {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    opacity: 0;
+                    transition: all 1s;
+                }
+
+                .copy {
+                    font-size: 12px;
+                    color: gray;
+                    text-decoration: underline;
+                    margin: 0;
+                    opacity: 0;
+                    transition: all 1s;
+                    cursor: pointer;
+                }
+
+                &.active {
+                    visibility: visible;
+                    transform: scale(1);
+                    animation: scale 0.6s ease-in-out 1;
+
+                    @keyframes scale {
+                        0% {
+                            transform: scale(0);
+                        }
+
+                        50% {
+                            transform: scale(1.2);
+                        }
+
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+
+                    p {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .loading {
+                position: absolute;
+                color: white;
+                top: 50%;
+                font-size: 40px;
+                color: #564a94;
+                display: none;
+                z-index: -1;
+
+                animation: rotate 1s infinite;
+
+                @keyframes rotate {
+                    from {
+                        transform: rotate(0deg);
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}
