@@ -33,7 +33,6 @@ let interval;
 const voices = window.speechSynthesis.getVoices();
 const readLobotomy =new SpeechSynthesisUtterance()
 readLobotomy.text = lobotomyTextGenerated.join(' ')
-readLobotomy.voice = voices[3];
 const speechLobotomy = window.speechSynthesis
 
 function click() {
