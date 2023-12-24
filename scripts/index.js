@@ -30,6 +30,12 @@ const lobotomyText = document.querySelector('.Lobotomy-text')
 
 let interval;
 
+const voices = window.speechSynthesis.getVoices();
+const readLobotomy =new SpeechSynthesisUtterance()
+readLobotomy.text = lobotomyTextGenerated.join(' ')
+readLobotomy.voice = voices[3];
+const speechLobotomy = window.speechSynthesis
+
 function click() {
     lobotomyText.innerHTML = `${lobotomyTextGenerated.join(' ')}`
     
@@ -37,6 +43,7 @@ function click() {
 
     interval = setInterval(() => {
         textBox.classList.add('active')
+        speechLobotomy.speak(readLobotomy)
         clearInterval(interval)
     }, Math.floor(Math.random() * 3000))
 }
