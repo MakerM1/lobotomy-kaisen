@@ -14,5 +14,8 @@
     "?",
     "the finger simply answered",
     "nah i'd win",
-    "nah i'd lose"
+    "nah i'd lose",
+    "stand proud, you're strong",
+    "i'm into girls like jeniffer lawrence, nice to meet you!",
+    "are you the honored one cause you're nah i'd win, or are you nah i'd win cause you're the honored one"
 ]

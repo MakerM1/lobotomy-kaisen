@@ -3,8 +3,8 @@ let lobotomyTextGenerated = [];
 let usedNumbers = []
 
 const randomLobotomyGenerator = () => {
-    while (usedNumbers.length < 16) {
-        let randomNumber = Math.floor(Math.random() * 16 + 1)
+    while (usedNumbers.length < 19) {
+        let randomNumber = Math.floor(Math.random() * 19 + 1)
 
         if (usedNumbers.indexOf(randomNumber) < 0) {
             usedNumbers.push(randomNumber)
